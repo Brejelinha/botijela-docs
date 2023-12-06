@@ -1,0 +1,40 @@
+Botijela: é um bot que gerencia filas de usuários e traduz mensagens
+
+Feito por Brejelinha (me contate no discord ou twitch para sugestões ou ajuda)
+
+Prefixo Padrao: $
+
+<> é um parâmetro obrigatório. [] é um parâmetro opcional.
+
+Comandos Diversos: [
+
+enka [<uid>] ['hsr'],                                       # mostra link do Enka Network, e direciona para o uid caso incluso na mensagem, inclua "hsr" para o link do hsr
+join,                                                       # manda o bot entrar em seu canal (usado somente no canal do Botijela)
+help [nome do comando],                                     # mostra este link ou detalhes de algum comando
+math <query>,                                               # executa uma query usando math.js
+part,                                                       # manda o bot sair de seu canal (usado em seu canal)
+ping,                                                       # mostra ping, uptime e outras infos do bot
+prefix <prefixo> (staff only),                              # muda prefixo de comandos usado em seu canal (não válido para comandos de fila) (staff only)
+language <'pt'|'en'|'es'> (staff only),                     # muda a língua padrão do chat (traduções estão sendo adicionadas)
+translate [to:<languageCode>] [from:<languageCode>] <text>  # traduz uma mensagem, se não incluir língua destino (to:), ela será definida como a língua padrão do chat
+
+],
+
+
+Filas: [ # "queue" se refere ao nome da fila
+
+createQueue <nome da fila> <separador> <descritor da fila>, # cria uma fila para o canal (staff only)
+changeQueue <nome da fila> <separador> <descritor da fila>, # edita a fila com nome do primeiro parâmetro (staff only)
+removeQueue <nome da fila>,                                 # remove a fila (staff only)
+
+queue,   # mostra a fila com este nome
+
+queue add <nomes>,                    # adiciona usuários à fila (staff only)
+queue remove <nomes>,                 # tira pessoas da fila sem adicionar aos completos (staff only)
+queue complete <nomes>,               # tira pessoas da fila, salvando elas no completo, (staff only
+#queue completos,                     # mostra pessoas que foram completas (staff only)
+queue attachReward <nome do resgate>, # linka resgate (acesse www.botijela.brejela.xyz para dar permissão ao bot) com tal nome, à fila (staff only)
+queue clear,                          # limpa itens da fila (staff only)
+queue reset,                          # limpa itens da fila e respectivos completos (staff only)
+
+]

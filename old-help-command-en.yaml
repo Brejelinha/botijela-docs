@@ -1,0 +1,40 @@
+Botijela: is a bot that translate messages and facilitates viewer queue management
+
+Made by Brejelinha (contact me on discord for help or suggestions)
+
+Default Prefix: $
+
+<> is a required parameter. [] is an optional parameter.
+
+Comandos Diversos: [
+
+enka [<uid>] ['hsr'],                                       # shows Enka Network's link, and includes the uid if provided, need to identify if its for hsr
+join,                                                       # makes the bot join your channel (used only at channel #botijela)
+help [nome do comando],                                     # shows this link or details about an command
+math <query>,                                               # executes an query using math.js
+part,                                                       # makes the bot leave your channel (used only at the target channel) (staff only)
+ping,                                                       # shows bot's ping, uptime and other infos
+prefix <prefix>,                                            # changes the prefix for the channel (queue commands ignore this) (staff only)
+language <'pt'|'en'|'es'>,                                  # changes the language for the channel (translations are in the work yet) (staff only)
+translate [to:<languageCode>] [from:<languageCode>] <text>  # translates a message, if target language (to:) is not defined, it selects channel language
+
+],
+
+
+Filas: [ # "queue" refers to the queue's name
+
+createQueue <queue's name> <separator> <queue's descriptor>,  # creates a queue for the channel (staff only)
+changeQueue <queue's name> <separator> <queue's descriptor>,  # edits the queue with included queue's name (staff only)
+removeQueue <queue's name>,                                   # removes the queue (staff only)
+
+queue,   # shows the queue with that name
+
+queue add <names>,                    # adds items to the queue (can be multiple) (staff only)
+queue remove <nomes>,                 # removes items from the queue (staff only)
+queue complete <nomes>,               # completes items from the queue (staff only)
+#queue completos,                     # shows completed list (staff only)
+queue attachReward <nome do resgate>, # links reward (access www.botijela.brejela.xyz to give bot permission) with mentioned name, to the queue (staff only)
+queue clear,                          # clear queue items (staff only)
+queue reset,                          # clear queue items and completed (staff only)
+
+]
